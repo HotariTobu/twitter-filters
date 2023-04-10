@@ -11,9 +11,22 @@
       "id": "{ee4d7463-b3fb-4f7e-abc4-90742ea0d1f0}"
     }
   },
+  "icons": {
+    "16": "img/icon-16.png",
+    "32": "img/icon-32.png",
+    "48": "img/icon-48.png",
+    "64": "img/icon-64.png",
+    "128": "img/icon-128.png",
+    "256": "img/icon-256.png",
+    "512": "img/icon-512.png"
+  },
   "action": {
     "default_title": "Edit filters",
     "default_popup": "popup/index.html"
+  },
+  "options_page": "popup/index.html",
+  "options_ui": {
+    "page": "popup/index.html"
   },
   "content_scripts": [
     {
@@ -22,6 +35,9 @@
       ],
       "js": [
         "common/index.js"
+      ],
+      "css": [
+        "common/style.css"
       ]
     }
   ],

@@ -1,5 +1,6 @@
 import ids from '../ids.json'
 import * as storage from '../utils/storage'
+import './event'
 
 ids.forEach(async function (id) {
   const element = document.getElementById(id)
@@ -16,4 +17,8 @@ ids.forEach(async function (id) {
   element.addEventListener('input', function () {
     storage.set(id, element.value)
   })
+})
+
+storage.get('blacklist', ['^_^']).then(function (blacklist) {
+  document.getElementById('blacklist').textContent = blacklist.join(' / ')
 })
