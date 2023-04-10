@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Filters",
+  "version": "$version$",
+  "description": "Filter Twitter contents",
+  "permissions": [
+    "storage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{ee4d7463-b3fb-4f7e-abc4-90742ea0d1f0}"
+    }
+  },
+  "action": {
+    "default_title": "Edit filters",
+    "default_popup": "popup/index.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "common/index.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+      ],
+      "matches": [
+      ]
+    }
+  ]
+}
