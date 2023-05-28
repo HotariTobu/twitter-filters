@@ -26,7 +26,7 @@
     "css-loader": "^6.7.3",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-standard-typescript": "^1.0.3",
-    "glob": "^9.3.0",
+    "glob": "^10.0.0",
     "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.2",
