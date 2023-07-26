@@ -18,7 +18,7 @@
     "version": "auto-changelog -p && npm run format:prettier && git add CHANGELOG.md"
   },
   "devDependencies": {
-    "@prettier/plugin-pug": "^2.4.1",
+    "@prettier/plugin-pug": "^3.0.0",
     "@types/chrome": "^0.0.239",
     "@types/pug": "^2.0.6",
     "auto-changelog": "^2.4.0",
